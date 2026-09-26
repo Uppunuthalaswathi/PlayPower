@@ -1,0 +1,55 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.site-header { height: 134px; border-top: 1px solid #3f3031; border-bottom: 1px solid #ddd; background: #fff; }
+.header-inner, .listing-page { width: min(1657px, calc(100% - 96px)); margin: 0 auto; }
+.header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: inline-flex; align-items: center; gap: 5px; color: #ff385c; font-size: 33px; font-weight: 700; letter-spacing: -1.5px; text-decoration: none; }
+.brand svg { width: 46px; height: 46px; fill: currentColor; }
+.search-bar { position: absolute; left: 50%; transform: translateX(-50%); display: flex; align-items: center; height: 70px; width: 605px; padding: 0 8px 0 21px; border: 1px solid #ddd; border-radius: 40px; box-shadow: 0 2px 5px rgb(0 0 0 / 9%); }
+.search-bar button { border: 0; background: transparent; font-size: 22px; white-space: nowrap; }
+.search-bar button:first-child { display: flex; gap: 24px; align-items: center; padding: 0 24px 0 18px; }
+.search-divider { height: 36px; border-left: 1px solid #ddd; }
+.search-bar .guest-search { color: #717171; padding: 0 24px; }
+.search-bar .search-submit { display: grid; place-items: center; width: 48px; height: 48px; margin-left: auto; border-radius: 50%; background: #ff385c; color: white; }
+.search-submit svg, .header-nav svg { width: 25px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+.header-nav { display: flex; align-items: center; gap: 12px; }
+.header-nav button { border: 0; background: none; font-size: 21px; font-weight: 600; }
+.host-button { padding: 18px 19px; }
+.round-button { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 50% !important; background: #f5f5f5 !important; }
+.menu-button svg { width: 30px; }
+.property-header { position: relative; padding-top: 47px; padding-bottom: 33px; }
+.property-header h1 { margin: 0; font-size: 39px; line-height: 1.15; font-weight: 600; letter-spacing: -1.05px; }
+.property-meta { margin: 16px 0 0; font-size: 16px; font-weight: 600; }
+.property-actions { position: absolute; right: 16px; bottom: 28px; display: flex; gap: 30px; }
+.property-actions button { border: 0; border-bottom: 1px solid currentColor; padding: 4px 0; background: transparent; font-size: 18px; font-weight: 600; }
+.property-actions span { margin-right: 8px; font-size: 26px; font-weight: 400; vertical-align: -2px; }
+.photo-grid { position: relative; display: grid; grid-template-columns: 2.06fr 1fr 1fr; grid-template-rows: 360px 360px; gap: 12px; height: 732px; overflow: hidden; border-radius: 18px; }
+.photo-tile { min-width: 0; border: 0; padding: 0; background-color: #ddd; background-repeat: no-repeat; background-size: 1917px 946px; transition: filter 180ms ease, transform 180ms ease; }
+.photo-tile:hover { filter: brightness(.88); }
+.photo-1 { grid-row: 1 / span 2; border-radius: 18px 0 0 18px; }
+.photo-3 { border-radius: 0 18px 0 0; }
+.photo-5 { border-radius: 0 0 18px 0; }
+.show-photos-button { position: absolute; right: 23px; bottom: 23px; display: flex; gap: 11px; align-items: center; padding: 12px 16px; border: 1px solid #222; border-radius: 10px; background: white; font-size: 17px; font-weight: 600; }
+.show-photos-button span { font-size: 24px; line-height: 12px; transform: rotate(90deg); }
+.listing-columns { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 110px; max-width: 1130px; padding-top: 48px; }
+.property-info { max-width: 670px; }
+.host-summary, .feature-list, .description, .amenities { border-bottom: 1px solid #ddd; padding: 0 0 30px; margin-bottom: 30px; }
+.host-summary { display: flex; align-items: center; justify-content: space-between; }
+.property-info h2 { margin: 0; font-size: 23px; line-height: 1.3; }
+.property-info p { margin: 8px 0 0; color: #222; font-size: 17px; line-height: 1.5; }
+.host-avatar { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; background: #e47a7a; color: white; font-size: 22px; font-weight: 700; }
+.feature-list { display: grid; gap: 25px; }
+.feature { display: flex; gap: 18px; }
+.feature > span { font-size: 26px; }
+.feature h3 { margin: 0; font-size: 17px; }
+.feature p { margin-top: 3px; color: #717171; font-size: 15px; }
+.description button, .amenities button { border: 0; border-bottom: 1px solid currentColor; padding: 0; background: transparent; margin-top: 16px; font-weight: 600; font-size: 16px; }
+.amenities { border: 0; }.amenities > div { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }.amenities p { margin: 0; }.amenities span { display: inline-block; width: 28px; }
+.booking-card { position: sticky; top: 28px; align-self: start; padding: 25px; border: 1px solid #ddd; border-radius: 14px; box-shadow: 0 6px 16px rgb(0 0 0 / 12%); }
+.booking-price { margin: 0 0 24px; font-size: 16px; }.booking-price strong { font-size: 22px; }
+.booking-inputs { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid #222; border-radius: 9px; overflow: hidden; }.booking-inputs button { display: flex; flex-direction: column; gap: 4px; padding: 11px; border: 0; background: white; text-align: left; }.booking-inputs button:first-child { border-right: 1px solid #222; }.booking-inputs .guests-input { grid-column: span 2; position: relative; border-top: 1px solid #222; }.booking-inputs span { font-size: 10px; font-weight: 700; }.booking-inputs strong { font-size: 14px; font-weight: 400; }.guests-input b { position: absolute; right: 13px; top: 20px; }
+.reserve-button { width: 100%; margin-top: 16px; padding: 15px; border: 0; border-radius: 8px; background: #e31c5f; color: white; font-size: 16px; font-weight: 600; }.charge-note { margin: 16px 0 23px; text-align: center; font-size: 14px; }.price-breakdown { display: grid; gap: 14px; }.price-breakdown p { display: flex; justify-content: space-between; gap: 15px; margin: 0; font-size: 15px; }.price-breakdown .total { margin-top: 8px; padding-top: 22px; border-top: 1px solid #ddd; }
+.photo-tour { position: fixed; inset: 0; z-index: 20; overflow-y: auto; background: #fff; animation: tour-enter 180ms ease-out; }.tour-header { position: sticky; top: 0; z-index: 1; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; height: 130px; padding: 0 53px; background: #fff; }.tour-header h1 { margin: 0; font-size: 26px; font-weight: 600; }.tour-header button { display: grid; place-items: center; width: 42px; height: 42px; border: 0; border-radius: 50%; background: transparent; font-size: 34px; }.tour-header button:hover { background: #f7f7f7; }.tour-header svg { width: 28px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 1.7; }.tour-actions { display: flex; justify-content: flex-end; gap: 20px; }.tour-content { width: min(1487px, calc(100% - 120px)); margin: 0 auto; }.tour-photo-nav { display: grid; grid-template-columns: repeat(8, 1fr); column-gap: 17px; row-gap: 20px; }.tour-thumbnail { min-width: 0; padding: 0; border: 0; background: transparent; color: #717171; font-size: 22px; line-height: 1.25; text-align: left; }.tour-thumbnail:hover, .tour-thumbnail[aria-current="true"] { color: #222; }.tour-thumbnail-image { display: block; position: relative; width: 100%; height: 158px; margin-bottom: 12px; overflow: hidden; border-radius: 12px; background: #eee; }.tour-thumbnail-image img { position: absolute; top: 0; left: 0; width: 1917px; max-width: none; height: 940px; }.tour-selected-photo { display: grid; grid-template-columns: minmax(300px, 1fr) 688px; gap: 70px; margin-top: 82px; }.tour-copy h2 { margin: 0; font-size: 47px; line-height: 1.1; }.tour-copy p { margin: 14px 0 0; color: #717171; font-size: 25px; line-height: 1.35; }.tour-large-image { position: relative; height: 520px; overflow: hidden; border-radius: 12px; background: #eee; }.tour-large-image img { position: absolute; top: 0; left: 0; width: 1917px; max-width: none; height: 940px; } @keyframes tour-enter { from { opacity: 0; } to { opacity: 1; } }
+@media (max-width: 1350px) { .header-inner, .listing-page { width: calc(100% - 80px); }.search-bar { width: 510px; }.search-bar button { font-size: 18px; }.search-bar button:first-child { gap: 12px; padding-right: 16px; }.search-bar .guest-search { padding: 0 14px; }.photo-grid { grid-template-rows: 300px 300px; height: 612px; }.listing-columns { gap: 70px; } }
